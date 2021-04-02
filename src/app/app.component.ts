@@ -9,4 +9,10 @@ import {FormsModule} from '@angular/forms';
 export class AppComponent {
   // title = 'weektwo-angular';
   title!: string;
+
+  post = {
+    title: "Title",
+    isFavorite: true
+  }
+
 }

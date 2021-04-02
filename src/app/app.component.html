@@ -1,5 +1,8 @@
 <!-- Favorite Component -->
-<favorite></favorite>
+<favorite
+[isFavorite]="post.isFavorite"
+
+></favorite>
 <br>
 
 
@@ -7,3 +10,7 @@
 <input type="text" [(ngModel)]="title">
 <br>
 {{title | titleCase}}
+
+
+
+<!-- (change) = "onFavoriteChange()" -->
