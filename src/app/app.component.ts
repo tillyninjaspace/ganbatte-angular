@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import { FavoriteChangedArgs } from './favorite/favorite.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -13,6 +16,16 @@ export class AppComponent {
   post = {
     title: "Title",
     isFavorite: true
+  }
+
+  onFavoriteChange(eventArgs: FavoriteChangedArgs) {
+    console.log("Favorite Changed: ", eventArgs);
+  }
+
+  tweet = {
+    body: '...',
+    likesCount: 10,
+    isLiked: true
   }
 
 }

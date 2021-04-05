@@ -1,7 +1,13 @@
+<style>
+    .bi {
+        color: blue;
+    }
+</style>
+
 <span
     class="bi"
-    [class.bi-star-fill]="isFavorite"
-    [class.bi-star]="!isFavorite"
+    [class.bi-star-fill]="isSelected"
+    [class.bi-star]="!isSelected"
     (click)="onClick()"
     >
     Star Test Icon</span>
