@@ -52,4 +52,6 @@ export class AppComponent {
 
   viewMode = 'map';
 
+  canSave = true;
+
 }
