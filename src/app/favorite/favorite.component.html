@@ -11,3 +11,17 @@
     (click)="onClick()"
     >
     Star Test Icon</span>
+
+
+
+<!-- Attribute Directive -->
+<span
+class="bi"
+[ngClass]="{
+    'bi-star-fill': isSelected,
+    'bi-star': !isSelected
+}"
+(click)="onClick()"
+>
+Star Test Icon with Attribute Directive
+</span>
