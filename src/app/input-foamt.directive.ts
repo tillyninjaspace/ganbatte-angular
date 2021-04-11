@@ -4,7 +4,7 @@ import { Directive, HostListener, ElementRef, Input } from '@angular/core';
   selector: '[appInputFoamt]'
 })
 export class InputFoamtDirective {
-  @Input('appInputFoamt') format: any;
+  @Input('appInputFoamt') format:any;
   constructor(private el: ElementRef) { }
 
   @HostListener('blur') onBlur() {
